@@ -1,6 +1,6 @@
 # Release Preparation
 
-This project is still being prepared locally before any GitHub release. Use this page as the final preflight workflow before creating a public repository or pushing a tag.
+Use this page as the final preflight workflow before updating the public repository, creating a release, or pushing a tag.
 
 ## Public And Private Files
 

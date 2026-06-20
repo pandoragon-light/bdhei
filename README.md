@@ -2,7 +2,7 @@
 
 Clean Python implementation of the Blended Drought and High-temperature Evapotranspiration Index (BDHEI).
 
-This project is being prepared locally before any GitHub release. It has not been uploaded to a remote repository.
+This repository provides a reusable implementation of the BDHEI calculation workflow and a small synthetic example for checking that the command-line interface works.
 
 ## Associated Paper
 
@@ -26,6 +26,8 @@ For details, see [docs/method.md](docs/method.md).
 ## Install
 
 ```powershell
+git clone https://github.com/pandoragon-light/bdhei.git
+cd bdhei
 python -m pip install -r requirements.txt
 python -m pip install -e .
 ```
@@ -84,7 +86,14 @@ Each STI file should contain:
 
 Supported input file types are `.xlsx`, `.xls`, and `.csv`. The pinned environment includes `openpyxl` for `.xlsx` and `xlrd` for `.xls`.
 
-By default, SPEI station IDs are read from filenames such as `SYNTHETIC_SITE_001_SPEI.csv`, and matching STI files are expected as `SYNTHETIC_SITE_001_STI_M_03.csv`.
+By default, the batch command searches for SPEI Excel files with `--spei-glob "*.xlsx"` and matches each station to an STI file ending in `_STI_M_03.xlsx`. For example:
+
+```text
+STATION_ID_SPEI.xlsx
+STATION_ID_STI_M_03.xlsx
+```
+
+For CSV inputs, set `--spei-glob "*.csv"` and `--sti-suffix "_STI_M_03.csv"` as shown in the synthetic example.
 
 ## Example Data
 
@@ -109,9 +118,9 @@ The batch run also writes:
 Copula_scores_allstations.xlsx
 ```
 
-## Verification Status
+## Development Checks
 
-Current local checks:
+Current development checks:
 
 - Public synthetic example run: passed.
 - Release preflight check: passed.
