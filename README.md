@@ -138,7 +138,7 @@ python tests\compare_directory_outputs.py `
   --tolerance 0.001
 ```
 
-For release-file checks before creating a public repository, see [docs/release.md](docs/release.md) and run:
+For release-file checks before updating the repository, creating a release, or pushing a tag, see [docs/release.md](docs/release.md) and run:
 
 ```powershell
 python tools\preflight_release.py
