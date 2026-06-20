@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bdhei"
+version = "0.1.0"
+description = "Calculate the Blended Drought and High-temperature Evapotranspiration Index (BDHEI)."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  { name = "Jian Huang" },
+  { name = "Xiehui Li" },
+  { name = "Lei Wang" },
+  { name = "Xuejia Wang" },
+  { name = "Shangru Li" },
+  { name = "Fan Zhang" },
+]
+license = "MIT"
+dependencies = [
+  "numpy==2.4.6",
+  "pandas==2.3.3",
+  "scipy==1.18.0",
+  "copulas==0.14.1",
+  "openpyxl==3.1.5",
+  "xlrd==2.0.2",
+]
+
+[project.urls]
+DOI = "https://doi.org/10.1007/s11069-026-08252-0"
+Paper = "https://link.springer.com/article/10.1007/s11069-026-08252-0"
+
+[project.scripts]
+bdhei = "bdhei.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,10 @@
+.deps/
+output/
+local/
+examples/output/*
+!examples/output/
+!examples/output/.gitkeep
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/

@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated Natural Hazards paper."
+title: "BDHEI Calculator"
+version: "0.1.0"
+date-released: 2026-06-20
+authors:
+  - family-names: Huang
+    given-names: Jian
+  - family-names: Li
+    given-names: Xiehui
+  - family-names: Wang
+    given-names: Lei
+  - family-names: Wang
+    given-names: Xuejia
+  - family-names: Li
+    given-names: Shangru
+  - family-names: Zhang
+    given-names: Fan
+preferred-citation:
+  type: article
+  title: "Construction and performance evaluation of a compound high-temperature and drought index for summer in Southwest China"
+  authors:
+    - family-names: Huang
+      given-names: Jian
+    - family-names: Li
+      given-names: Xiehui
+    - family-names: Wang
+      given-names: Lei
+    - family-names: Wang
+      given-names: Xuejia
+    - family-names: Li
+      given-names: Shangru
+    - family-names: Zhang
+      given-names: Fan
+  journal: "Natural Hazards"
+  year: 2026
+  volume: 122
+  doi: "10.1007/s11069-026-08252-0"
+  url: "https://link.springer.com/article/10.1007/s11069-026-08252-0"
